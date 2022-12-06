@@ -10,7 +10,9 @@ const server = http.createServer((req, res) => {
     fs.createReadStream('arizona.html').pipe(res)
   } else if (url === '/dinosaur.html'){
     fs.createReadStream('about.html').pipe(res)
-  }  else {
+  } else if (url ==='/ending.html') {
+    fs.createReadStream('ending.html').pipe(res)
+  }else {
     res.write('Doesn\'t exist'); 
     res.end(); 
   }
