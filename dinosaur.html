@@ -1,3 +1,20 @@
 <html>
-    <h1
+    <img src="https://discovery.sndimg.com/content/dam/images/discovery/editorial/podcasts/Curiosity/2020/3/Color_Dinosaurs_Getty_Images.jpg.rend.hgtvcom.616.616.suffix/1583454329186.jpeg" height="500" width="500">
+    <h2>The dinosaur asks you a question:</h2>
+    <p>What is the first color of the rainbow?</p>
+    <p><input type="text" id="answer" value="type answer here"></p>
+    <p><button onclick="checkanswer()">checkanswer</button></p>
+
+    <script>
+        function cheat() {
+            var answer = document.getElementById("answer").value
+            if (answer==="red") {
+                alert("correct answer")
+                window.location.href="/dinosaur2.html"
+            } else {
+                alert("wrong go back to school")
+                window.location.href="/dinosaureat.html"
+            }
+        }
+    </script>
 </html>
